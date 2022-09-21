@@ -1,0 +1,372 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header
+{
+   min-height: 100vh;
+   width:100%;
+  
+   background-position:centre;
+   background-size: cover;
+   position:relative;
+}
+.ft
+{
+    background-image: url("img/bgpic.jpg");
+}
+
+nav{
+    display: flex;
+    padding:2% 4%;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(233, 117, 15);
+    max-height: 8vh;
+   opacity: 3;
+}
+nav img{
+    width:90px;
+    align-content: left;
+    height:100px;
+    
+}
+.nav-link
+{
+    
+    flex:1; /* to occupy space between the bar we are going to cretae*/
+    text-align:right; /* to make nav link on widgets to be align on right side properly*/
+}
+.nav-link ul li{
+    list-style: none; /* to make bullets appearing disapper*/
+    display: inline-block;/*to make block within website for navigation block*/
+     padding:4px 4px;
+     position: relative;
+}
+.nav-link ul li a{
+    color:#fff; /* to make navlink class ul list li listitem having anchor tag color white*/
+    text-decoration: none; /*to make navlink class ul list li listitem text decoration none mean color blue will be gone*/
+    font-size: 18px;
+   align-items: right;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-link ul li::after
+{
+    content:'';
+    width:0%;
+    height:2px;
+    background:#fff;
+    display:block;
+    margin:auto;
+    transition: 0.3ms;
+}
+.nav-link ul li:hover::after
+{
+    width:100%; /* first hover will be done meaning that first we will know that py placing or taking mouse on that elelmrnt
+    width will be changes to 100 from 0 % of after*/
+}
+.headers{
+    width: 90%;/* it will be good to have horizontal line*/
+    
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.heig
+{
+    top:60%;
+    padding: 0%;
+   margin-bottom: 0%;
+   
+}
+.whi
+{
+    color: #fff;
+    top:50%;
+}
+.blk
+{
+    color: black;
+}
+
+.row1
+{
+
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    display:flex;
+    justify-content:space-between;
+}
+.row
+{
+    margin-top: 2%;;
+    margin-left: 3%;
+    margin-right: 3%;
+    display:flex;
+    justify-content:space-between;
+}
+.course-col
+{
+    flex:35%;
+    background:#fff3f3;
+    border-radius: 12px;
+    margin-bottom: 3%;
+    padding: 11px 9px;
+    box-sizing: border-box;
+  
+}
+.course-col:hover
+{
+    background: aqua;
+    padding: 9px 7px;
+    box-sizing: border-box;
+}
+.abt
+{
+    display: inline-block;
+    top:75%;
+    padding:0%;
+    align-items: left;
+    align-self: flex-start;
+    flex:35%;
+    background:#fff3f3;
+    border-radius: 12px;
+    margin-bottom: 3%;
+    padding: 11px 9px;
+    box-sizing: border-box;
+    margin-top: 1%;
+   
+}
+.abt:hover
+{
+    background: rgb(0, 255, 68);
+    padding: 9px 7px;
+    box-sizing: border-box;
+}
+
+.p
+{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+/* for heading button  */
+.headingbtn
+{
+    display: inline-block;
+    color: rgb(217, 241, 210);
+    border:1px solid #fff;
+    background: transparent;
+    position:relative;
+    cursor: pointer;
+    padding:10px 12px;
+    margin-top: 1%;
+    text-decoration: none;
+}
+.headingbtn:hover
+{
+   border: 2px solid aqua;
+   background: transparent;
+   transition:5ms;
+   color: aqua;
+  
+}
+.uy
+{
+    display: inline-block;
+    width:100%;
+    height: 30vh;
+    text-align:center;
+
+}
+.uyt
+{
+    display: inline-block;
+    width:30%;
+    align-self: left;
+    margin-left: 1%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+span{
+    color: #fc5c65;
+    font-weight:900;
+   
+  }
+   
+  footer{
+    background: #c6c0c0;
+    padding: 80px 0;
+  }
+   
+  .footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+   
+  .logo{
+    width: 180px;
+  }
+   
+  .social-media{
+    margin: 20px 0;
+  }
+   
+  .social-media ul li{
+    color: #001a21;
+    margin-right: 25px;
+    text-decoration: none;
+    transition: .3s linear;
+    display: inline-block;
+  }
+   
+  .social-media ul li:hover{
+    color: #fc5c65;
+  }
+   
+  .right-col h1{
+    font-size: 26px;
+  }
+   
+  .border{
+    width: 100px;
+    height: 4px;
+    background: #fc5c65;
+  }
+   
+  .newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+   
+  .txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    /* color: #293043; */
+     color: rgb(14, 13, 13);
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+  }
+   
+  .btn{
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #fc5c65;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+  }
+   
+  .btn:hover{
+    opacity: .7;
+  }
+   
+  .page-content{
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   
+  @media screen and (max-width:960px) {
+    .footer-container{
+      max-width: 600px;
+    }
+    .right-col{
+      width: 100%;
+      margin-bottom: 60px;
+    }
+   
+    .left-col{
+      width: 100%;
+      text-align: center;
+    }
+    .headers{
+      width: 90%;/* it will be good to have horizontal line*/
+      
+      position: absolute;
+      top:45%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      text-align:center;
+      margin-top: 1%;
+      font-size: small;
+  }
+  .abt
+{
+    display: inline-block;
+  
+    padding:0%;
+    align-items: left;
+    align-self: flex-start;
+    flex:35%;
+    background:#fff3f3;
+    border-radius: 12px;
+    margin-bottom: 3%;
+    padding: 11px 9px;
+    box-sizing: border-box;
+    margin-top:51%;
+    width: 350px;
+    height:150px;
+  
+  }
+  .heig
+  {
+     margin-top: 10%;
+      padding: 0%;
+     margin-bottom: 0%;
+     
+  }
+  .row
+  {
+      margin-top: 2%;;
+      margin-left: 3%;
+      margin-right: 3%;
+      display:flex;
+      justify-content:space-between;
+     
+    
+  }
+  .course-col
+  {
+      flex:35%;
+      background:#fff3f3;
+      border-radius: 12px;
+      margin-bottom: 3%;
+      padding: 11px 9px;
+      box-sizing: border-box;
+    
+  }
+};
+
+  @media screen and (max-width:700px){
+    .btn{
+      margin: 0;
+      width: 100%;
+      margin-top: 20px;
+      }
+  }  
+ 
